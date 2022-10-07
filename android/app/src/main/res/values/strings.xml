@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">gamebaconstudios</string>
+    <string name="title_activity_main">gamebaconstudios</string>
+    <string name="package_name">io.ionic.gamebaconstudios</string>
+    <string name="custom_url_scheme">io.ionic.gamebaconstudios</string>
+</resources>
