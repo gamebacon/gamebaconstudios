@@ -1,0 +1,7 @@
+{
+  "name": "gamebaconstudios",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
