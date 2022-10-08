@@ -32,7 +32,6 @@ const App = () => {
     <IonApp>
         <IonReactRouter>
             <IonSplitPane contentId='main'>
-                <IonMenuButton/>
                 <AppLayoutMenu/>
                 <IonRouterOutlet id='main'>
                     <Route>
