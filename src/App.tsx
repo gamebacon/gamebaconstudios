@@ -1,5 +1,5 @@
 import React from 'react';
-import {IonApp, IonMenuButton, IonRouterOutlet, IonSplitPane, setupIonicReact} from '@ionic/react';
+import {IonApp, IonMenu, IonMenuButton, IonNav, IonRouterOutlet, IonSplitPane, setupIonicReact} from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Route } from 'react-router-dom';
 
@@ -24,6 +24,7 @@ import './theme/variables.css';
 
 import HomePage from './pages/HomePage';
 import AppLayoutMenu from "./components/AppLayoutMenu";
+import GamesPage from "./pages/GamesPage";
 
 setupIonicReact();
 
@@ -37,10 +38,15 @@ const App = () => {
                     <Route>
                         <HomePage/>
                     </Route>
+                    <Route path='/games'>
+                        <GamesPage/>
+                    </Route>
                 </IonRouterOutlet>
             </IonSplitPane>
         </IonReactRouter>
-        <h1 className='text-amber-900 bg-green-500'>Test</h1>
+        <div className='bg-blue-600 h-16 aboslute'>
+            <IonMenuButton/>
+        </div>
     </IonApp>
   );
 }

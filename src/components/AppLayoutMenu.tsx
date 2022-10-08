@@ -1,4 +1,4 @@
-import {IonList, IonMenu, IonMenuToggle, IonRouterLink} from "@ionic/react";
+import {IonList, IonMenu, IonMenuButton, IonMenuToggle, IonRouterLink} from "@ionic/react";
 import React from "react";
 import {FiHome, FiPlay} from 'react-icons/fi';
 
@@ -34,14 +34,14 @@ const AppLayoutMenu: React.FC = () => {
                 </IonRouterLink>
                 {pages.map((page, index) => {
                     return (
-                    <IonMenuToggle key={index} autoHide={false} className='bg-gray-100 p-5 flex w-full'>
-                        <IonRouterLink routerLink={page.url} className='w-full h-full'>
-                            <div className='flex space-x-5 items-center'>
-                                <label className=''>{page.title}</label>
-                                <div className='w-fit'>{page.icon}</div>
-                            </div>
-                        </IonRouterLink>
-                    </IonMenuToggle>
+                        <IonMenuToggle key={index} autoHide={false} className='bg-gray-100 flex w-full'>
+                            <IonRouterLink routerLink={page.url} className='w-full h-full p-5'>
+                                <div className='flex space-x-5 items-center'>
+                                    <label className=''>{page.title}</label>
+                                    <div className='w-fit'>{page.icon}</div>
+                                </div>
+                            </IonRouterLink>
+                        </IonMenuToggle>
                     );
                 })}
             </IonList>
