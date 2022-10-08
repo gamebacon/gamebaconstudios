@@ -1,17 +1,29 @@
 import React from 'react';
-import {useState} from "react";
-import './App.css';
+import {IonApp, IonRouterOutlet, IonSplitPane} from '@ionic/react';
+import { IonReactRouter } from '@ionic/react-router';
+import { Route } from 'react-router-dom';
+
+/* Main CSS File */
+import './theme/variables.css';
+
+import HomePage from './pages/HomePage';
+import AppLayoutMenu from "./components/AppLayoutMenu";
 
 const App = () => {
-    const [count, setCounter] = useState(0);
     return (
-    <div className="App">
-        <h1 className='text-3xl text-amber-900 bg-green-900'>Hello World!</h1>
-        <div>{count}</div>
-        <button onClick={() => {
-            setCounter(count + 1)
-        }}>Press me</button>
-    </div>
+    <IonApp>
+        <IonReactRouter>
+            <IonSplitPane contentId='main'>
+                <AppLayoutMenu/>
+                <IonRouterOutlet id='main'>
+                    <Route>
+                        <HomePage/>
+                    </Route>
+                </IonRouterOutlet>
+            </IonSplitPane>
+        </IonReactRouter>
+        <h1 className='text-amber-900 bg-green-500'>Test</h1>
+    </IonApp>
   );
 }
 
