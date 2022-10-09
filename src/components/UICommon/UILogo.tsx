@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC} from 'react';
 
 // @ts-ignore
 import logo from '../../assets/images/logo.jpg';
