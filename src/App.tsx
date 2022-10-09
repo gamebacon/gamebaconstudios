@@ -23,32 +23,32 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 
 import HomePage from './pages/HomePage';
-import AppLayoutMenu from "./components/AppLayoutMenu";
-import GamesPage from "./pages/GamesPage";
+import AppLayoutMenu from './components/AppLayoutMenu';
+import GamesPage from './pages/GamesPage';
 
 setupIonicReact();
 
 const App = () => {
     return (
-    <IonApp>
-        <IonReactRouter>
-            <IonSplitPane contentId='main'>
-                <AppLayoutMenu/>
-                <IonRouterOutlet id='main'>
-                    <Route>
-                        <HomePage/>
-                    </Route>
-                    <Route path='/games'>
-                        <GamesPage/>
-                    </Route>
-                </IonRouterOutlet>
-            </IonSplitPane>
-        </IonReactRouter>
-        <div className='bg-blue-600 h-16 aboslute'>
-            <IonMenuButton/>
-        </div>
-    </IonApp>
-  );
+        <IonApp>
+            <IonReactRouter>
+                <IonSplitPane contentId='main'>
+                    <AppLayoutMenu/>
+                    <IonRouterOutlet id='main'>
+                        <Route>
+                            <HomePage/>
+                        </Route>
+                        <Route path='/games'>
+                            <GamesPage/>
+                        </Route>
+                    </IonRouterOutlet>
+                </IonSplitPane>
+            </IonReactRouter>
+            <div className='bg-blue-600 h-16 aboslute'>
+                <IonMenuButton/>
+            </div>
+        </IonApp>
+    );
 }
 
 export default App;

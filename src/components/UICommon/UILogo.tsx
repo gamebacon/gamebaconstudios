@@ -1,11 +1,15 @@
-import React from "react";
+import React, {FC} from "react";
 
 // @ts-ignore
 import logo from '../../assets/images/logo.jpg';
 
-const UILogo: React.FC = () => {
+type UILogoProps = {
+    style?: string;
+}
+
+const UILogo: FC<UILogoProps> = ({style}) => {
     return (
-        <img src={logo} className='h-28'/>
+        <img src={logo} className={`h-28' ${style}`}/>
     );
 };
 

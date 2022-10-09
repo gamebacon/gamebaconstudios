@@ -31,5 +31,7 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
         'max-len': [2, {'code': 120}],
         'linebreak-style': 0,
+        'quotes': ['error', 'single'],
+        'indent': ['error', 4],
     },
 };
