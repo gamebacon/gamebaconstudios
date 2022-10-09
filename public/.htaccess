@@ -7,3 +7,9 @@
   RewriteCond %{REQUEST_FILENAME} !-l
   RewriteRule . /index.html [L]
 </IfModule>
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?gamebaconstudios\.com
+RewriteRule ^(.*)$ https://www.gamebaconstudios.com/$1 [R,L]
+

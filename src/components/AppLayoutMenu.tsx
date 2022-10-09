@@ -27,7 +27,7 @@ const pages: AppLayoutMenuPage[] = [
 
 const AppLayoutMenu: React.FC = () => {
     return (
-        <IonMenu contentId='main' side='start' swipe-gesture={true} menuId='main-menu'>
+        <IonMenu contentId='main' side='end' swipe-gesture={true} menuId='main-menu'>
             <IonList className='space-y-5 h-full bg-gradient-to-r from-white to-gray-100
              items-center flex flex-col px-10 pt-10'>
                 <IonRouterLink routerLink='/'>
