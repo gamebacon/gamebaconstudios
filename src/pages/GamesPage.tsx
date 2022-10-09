@@ -5,7 +5,7 @@ import React from 'react';
 const GamesPage: React.FC = () => {
     return (
         <IonPage>
-            <h1>Hi</h1>
+            <h1>Games</h1>
         </IonPage>
     )
 };
