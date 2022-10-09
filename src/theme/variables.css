@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 ion-menu {
-    width: 200px;
+}
+
+.sc-ion-buttons-md-h {
+    display: block !important;
 }

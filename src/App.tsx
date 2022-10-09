@@ -44,9 +44,7 @@ const App = () => {
                     </IonRouterOutlet>
                 </IonSplitPane>
             </IonReactRouter>
-            <div className='bg-blue-600 h-16 aboslute'>
-                <IonMenuButton/>
-            </div>
+            <IonMenuButton className='absolute right-2 top-2 ion-no-padding ion-no-margin text-4xl' mode='md'/>
         </IonApp>
     );
 }
