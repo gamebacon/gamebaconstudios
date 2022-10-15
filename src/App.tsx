@@ -42,8 +42,8 @@ const App = () => {
                         <Route path='/games'>
                             <GamesPage/>
                         </Route>
-                        <Route path='/games/:title'>
-                            <GamePage title={'df'}/>
+                        <Route path='/games/:id' exact={true}>
+                            <GamePage/>
                         </Route>
                     </IonRouterOutlet>
                 </IonSplitPane>

@@ -7,9 +7,9 @@ const HomePage: React.FC = () => {
             <IonContent>
                 <div className='h-full w-full md:p-20'>
                     <div className='md:bg-gradient-to-tr from-red-500 to-orange-500 via-yellow-500
-                     h-full w-full md:rounded-xl px-4 md:px-16 xl:px-36 pt-8 flex flex-col
+                     h-full w-full md:rounded-xl px-4 md:px-16 xl:px-36 pt-5 flex flex-col
                       shadow-2xl overflow-y-auto'>
-                        <h1 className='text-center text-4xl md:text-3xl lg:text-6xl font-bold pb-10 md:pb-20'>
+                        <h1 className='text-center text-4xl md:text-3xl lg:text-6xl font-bold pb-10 md:pb-15'>
                             Hi there 👋</h1>
                         <div className='bg-gradient-to-tr from-red-500 to-orange-500 via-yellow-500
                          md:bg-none p-5 rounded-lg'>
