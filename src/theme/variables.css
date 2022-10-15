@@ -1,9 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia|Lobster|Fuzzy+Bubbles|Roboto|Poppins');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-ion-menu {
+body {
+    font-family: Roboto, sans-serif;
+    color: hsl(236, 33%, 19%);
 }
+
+ion-router-link {
+    color: hsl(236, 33%, 19%);
+}
+
+ion-menu {
+    font-family: Sofia, sans-serif;
+}
+
+h1 {
+    font-family: Lobster, sans-serif;
+}
+
+h2 {
+    font-family: Poppins, sans-serif;
+}
+
+.font-fuzzy-bubbles {
+    font-family: Fuzzy Bubbles, sans-serif;
+}
+
+
 
 .sc-ion-buttons-md-h {
     display: block !important;

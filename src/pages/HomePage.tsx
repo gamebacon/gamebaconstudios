@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
                             <h2 className='text-2xl xl:text-4xl font-semibold pb-5 md:p-0'>
                                 WTF is Gamebacon Studios?</h2>
                             {/* eslint-disable-next-line max-len */}
-                            <h4 className='md:text-base xl:text-xl'>Gamebacon studios is an indie game studio based in Sweden. yep thats about it, heres some dummy text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero dui, aliquam eu lectus quis, suscipit posuere enims at. Suspendisse nulit amet dui. Nullam risus magna, commodo non nulla id, pulvinar pharetra nulla. Suspendisse luctus diam eget aliquet fermentum. Ut porta, libero quis volutpat lacinia, dolor turpis faucibus dui, malesuada laoreet dolor mi ac metus. Maecenas sed est at justo fermentum lobortis. Cras ut eros a dolor placerat faucibus vel sit amet leo. </h4>
+                            <span className='md:text-base xl:text-xl font-fuzzy-bubbles'>Gamebacon studios is an indie game studio based in Sweden. yep thats about it, heres some dummy text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero dui, aliquam eu lectus quis, suscipit posuere enims at. Suspendisse nulit amet dui. Nullam risus magna, commodo non nulla id, pulvinar pharetra nulla. Suspendisse luctus diam eget aliquet fermentum. Ut porta, libero quis volutpat lacinia, dolor turpis faucibus dui, malesuada laoreet dolor mi ac metus. Maecenas sed est at justo fermentum lobortis. Cras ut eros a dolor placerat faucibus vel sit amet leo. </span>
                         </div>
                     </div>
                 </div>

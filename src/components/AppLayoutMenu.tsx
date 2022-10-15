@@ -2,7 +2,6 @@ import {IonList, IonMenu, IonMenuButton, IonMenuToggle, IonRouterLink} from '@io
 import React from 'react';
 import {FiHome, FiPlay} from 'react-icons/fi';
 
-
 import UILogo from './UICommon/UILogo';
 
 interface AppLayoutMenuPage {
@@ -30,9 +29,11 @@ const AppLayoutMenu: React.FC = () => {
         <IonMenu contentId='main' side='end' swipe-gesture={true} menuId='main-menu'>
             <IonList className='space-y-5 h-full bg-gradient-to-l from-white to-gray-100
              items-center flex flex-col px-10 pt-10'>
-                <IonRouterLink routerLink='/'>
-                    <UILogo style='w-full'/>
-                </IonRouterLink>
+                <IonMenuToggle autoHide={false}>
+                    <IonRouterLink routerLink='/'>
+                        <UILogo style='w-full'/>
+                    </IonRouterLink>
+                </IonMenuToggle>
                 {pages.map((page, index) => {
                     return (
                         <IonMenuToggle key={index} autoHide={false}
