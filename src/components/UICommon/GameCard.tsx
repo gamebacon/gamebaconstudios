@@ -14,13 +14,13 @@ const GameCard: FC<GameCardProps> = ({
     description,
     href
 }) => {
-    return  <IonRouterLink routerLink={href}>
+    return  <IonRouterLink routerLink={href} onClick={() => window.location.reload()}>
         <div>
-            <div className='flex m-5 shadow-2xl rounded-2xl'>
-                <img src={img} className='w-40 md:w-72 rounded-l-2xl'/>
+            <div className='flex m-5 shadow-game-item rounded-2xl bg-white'>
+                <img src={img} className='w-40 h-30 md:w-72 md:h-60 rounded-l-2xl'/>
                 <div className='rounded-r-2xl flex flex-col p-5'>
                     <h2 className='font-semibold text-2xl'>{title}</h2>
-                    <span className=''>{description}</span>
+                    <span className='text-gray-500'>{description}</span>
                 </div>
             </div>
         </div>
