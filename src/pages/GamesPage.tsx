@@ -7,7 +7,7 @@ import games from '../util/games';
 const GamesPage: React.FC = () => {
     return (
         <IonPage className=''>
-            <div className='flex flex-col h-full overflow-y-auto'>
+            <div className='flex flex-col h-full overflow-y-auto bg-light-background'>
                 { Object.values(games)?.map((game, idx) => (
                     <GameCard
                         key={idx}
