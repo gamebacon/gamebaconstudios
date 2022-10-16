@@ -25,7 +25,7 @@ import './theme/variables.css';
 import HomePage from './pages/HomePage';
 import AppLayoutMenu from './components/AppLayoutMenu';
 import GamesPage from './pages/GamesPage';
-import GamePage from './pages/GamePage';
+import GamePage from './components/games/GamePage';
 
 setupIonicReact();
 
