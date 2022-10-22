@@ -14,7 +14,6 @@ const GameCard: FC<GameCardProps> = ({
     description,
     href
 }) => {
-    console.log(href)
     return  <IonRouterLink routerLink={href} onClick={() => {window.location.reload()}}>
         <div>
             <div className='flex m-5 shadow-game-item rounded-2xl bg-white border border-neutral-300 text-black-navy'>

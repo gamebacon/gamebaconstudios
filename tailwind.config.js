@@ -17,6 +17,11 @@ module.exports = {
             },
             fontFamily: {
 
+            },
+            borderRadius: {
+                '4xl': '32px',
+                '5xl': '42px',
+                '6xl': '52px'
             }
         },
     },

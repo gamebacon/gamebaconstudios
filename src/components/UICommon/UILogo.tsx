@@ -1,7 +1,6 @@
 import React, {FC} from 'react';
 
-// @ts-ignore
-import logo from '../../assets/images/logo.jpg';
+import logo from '../../assets/images/logo.svg';
 
 type UILogoProps = {
     style?: string;
