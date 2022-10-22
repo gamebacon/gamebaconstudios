@@ -26,6 +26,7 @@ import HomePage from './pages/HomePage';
 import AppLayoutMenu from './components/AppLayoutMenu';
 import GamesPage from './pages/GamesPage';
 import GamePage from './components/game/GamePage';
+import ContactPage from './pages/ContactPage';
 
 setupIonicReact();
 
@@ -44,6 +45,9 @@ const App = () => {
                         </Route>
                         <Route path='/games/:id' exact={true}>
                             <GamePage/>
+                        </Route>
+                        <Route path='/contact' exact={true}>
+                            <ContactPage/>
                         </Route>
                     </IonRouterOutlet>
                 </IonSplitPane>

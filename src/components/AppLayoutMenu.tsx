@@ -1,9 +1,10 @@
-import {IonList, IonMenu, IonMenuButton, IonMenuToggle, IonRouterLink} from '@ionic/react';
+import {IonItem, IonList, IonMenu, IonMenuButton, IonMenuToggle, IonRouterLink} from '@ionic/react';
 import React, {useState} from 'react';
 import {FiHome, FiPlay} from 'react-icons/fi';
 
 import UILogo from './UICommon/UILogo';
 import MenuYouAreHere from './menu/MenuYouAreHere';
+import {BsTelephone} from 'react-icons/bs';
 
 interface AppLayoutMenuPage {
     title: string,
@@ -21,6 +22,11 @@ const pages: AppLayoutMenuPage[] = [
         title: 'Games',
         url: '/games',
         icon: <FiPlay/>,
+    },
+    {
+        title: 'Connect',
+        url: '/contact',
+        icon: <BsTelephone/>,
     }
 ];
 
@@ -59,6 +65,9 @@ const AppLayoutMenu: React.FC = () => {
                         </div>
                     );
                 })}
+                <div className='absolute bottom-2'>
+                    <span className='text-slate-400 font-roboto text-sm'>Gamebacon Studios 2022</span>
+                </div>
             </IonList>
         </IonMenu>
     );
