@@ -54,7 +54,6 @@ const AppLayoutMenu: React.FC = () => {
                                 className='shadow-menu-item flex w-full rounded-lg'>
                                 <IonRouterLink
                                     routerLink={page.url}
-                                    /* eslint-disable-next-line max-len */
                                     className='w-full h-full p-5 text-black text-black-navy'>
                                     <div className='flex space-x-5 items-center text-2xl justify-between font-semibold'>
                                         <label className=''>{page.title}</label>
