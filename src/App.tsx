@@ -43,7 +43,7 @@ const App = () => {
                         <Route path='/games' exact={true}>
                             <GamesPage/>
                         </Route>
-                        <Route path='/games/:id' exact={true}>
+                        <Route path='/game/:id' exact={true}>
                             <GamePage/>
                         </Route>
                         <Route path='/contact' exact={true}>
