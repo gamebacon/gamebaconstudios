@@ -7,7 +7,6 @@ import {IonPage, IonBackButton, IonRouterLink} from '@ionic/react';
 const GamePage: React.FC = () => {
     const {id} = useParams<any>();
     const game = games[id];
-    console.log(id);
     return <IonPage className=''>
         <IonBackButton defaultHref='/games' className='absolute p-5' mode='md'/>
         <div className='justify-center flex mt-20'>
