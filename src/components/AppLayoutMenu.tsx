@@ -19,6 +19,11 @@ const pages: AppLayoutMenuPage[] = [
         icon: <FiHome/>,
     },
     {
+        title: 'The team',
+        url: '/team',
+        icon: <FiHome/>,
+    },
+    {
         title: 'Games',
         url: '/games',
         icon: <FiPlay/>,
