@@ -1,6 +1,6 @@
 import React from 'react';
 import games from '../../util/games';
-import {useParams} from 'react-router';
+import {useParams} from 'react-router-dom';
 import {IonPage, IonBackButton, IonRouterLink} from '@ionic/react';
 
 
