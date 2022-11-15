@@ -1,6 +1,5 @@
 import React from 'react';
 import {IonPage} from '@ionic/react';
-import {NormalizeName} from '../util/NormalizeName';
 import GameCard from '../components/game/GameCard';
 import games from '../util/games';
 
@@ -14,7 +13,7 @@ const GamesPage: React.FC = () => {
                         img={game.image}
                         title={game.title}
                         description={game.description}
-                        href={'/game/' + idx}
+                        href={'/games/' + idx}
                     />
                 )) }
             </div>
