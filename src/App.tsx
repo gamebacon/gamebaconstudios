@@ -1,7 +1,8 @@
 import React from 'react';
 import {IonApp, IonMenuButton, IonRouterOutlet, IonSplitPane, setupIonicReact} from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { Redirect, Route } from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -24,9 +25,12 @@ import './theme/variables.css';
 
 import HomePage from './pages/HomePage';
 import AppLayoutMenu from './components/AppLayoutMenu';
-import GamesPage from './pages/GamesPage';
+import AllGamesPage from './pages/AllGamesPage';
 import GamePage from './components/game/GamePage';
 import ContactPage from './pages/ContactPage';
+import GamePrivacyPolicy from './components/game/GamePrivacyPolicy';
+import GameRouting from './pages/GameRouting';
+import TeamPage from './pages/TeamPage';
 
 setupIonicReact();
 
@@ -37,21 +41,18 @@ const App = () => {
                 <IonSplitPane contentId='main'>
                     <AppLayoutMenu/>
                     <IonRouterOutlet id='main'>
-                        <Route exact path='/'>
-                            <Redirect to='/home'/>
-                        </Route>
-                        <Route exact path='/home'>
-                            <HomePage/>
-                        </Route>
-                        <Route path='/games/:id'>
-                            <GamePage/>
-                        </Route>
-                        <Route exact path='/games'>
-                            <GamesPage/>
-                        </Route>
-                        <Route exact path='/contact'>
-                            <ContactPage/>
-                        </Route>
+                        <Switch>
+                            <Route exact={true} path='/contact'>
+                                <ContactPage/>
+                            </Route>
+                            <Route exact={true} path='/team'>
+                                <TeamPage/>
+                            </Route>
+                            <Route exact={true} path='/'>
+                                <HomePage/>
+                            </Route>
+                        </Switch>
+                        <Route path="/games" component={GameRouting}/>
                     </IonRouterOutlet>
                 </IonSplitPane>
             </IonReactRouter>

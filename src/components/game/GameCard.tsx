@@ -14,7 +14,6 @@ const GameCard: FC<GameCardProps> = ({
     description,
     href
 }) => {
-    console.log(`list url: >${img}<`)
     return  <IonRouterLink routerLink={href}>
         <div className='flex m-5 shadow-game-item rounded-2xl bg-white border border-neutral-300 text-black-navy'>
             <img src={img} className='w-40 h-30 md:w-72 md:h-60 rounded-l-2xl'/>
