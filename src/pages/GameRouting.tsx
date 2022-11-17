@@ -4,6 +4,7 @@ import {Route, Switch} from 'react-router-dom';
 import GamePage from '../components/game/GamePage';
 import GamePrivacyPolicy from '../components/game/GamePrivacyPolicy';
 import AllGamesPage from './AllGamesPage';
+import TestPage from './TestPage';
 
 const GameRouting: React.FC = () => {
     return (
@@ -13,6 +14,9 @@ const GameRouting: React.FC = () => {
                     <Switch>
                         <Route exact={true} path='/games'>
                             <AllGamesPage/>
+                        </Route>
+                        <Route exact={true} path='/games/test'>
+                            <TestPage/>
                         </Route>
                         <Route exact={true} path='/games/:id'>
                             <GamePage/>
