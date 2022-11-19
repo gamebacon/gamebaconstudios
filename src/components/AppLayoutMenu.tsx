@@ -42,7 +42,7 @@ const AppLayoutMenu: React.FC = () => {
     return (
         <IonMenu contentId='main' side='end' swipe-gesture={true} menuId='main-menu'>
             <IonList className='space-y-5 h-full bg-gradient-to-l from-white to-gray-100
-             items-center flex flex-col px-10 pt-10'>
+             items-center flex flex-col px-10 pt-10 overflow-scroll'>
                 <IonMenuToggle autoHide={false}>
                     <IonRouterLink routerLink='/'>
                         <UILogo style='w-full'/>
@@ -69,7 +69,7 @@ const AppLayoutMenu: React.FC = () => {
                         </div>
                     );
                 })}
-                <div className='absolute bottom-2'>
+                <div className=''>
                     <span className='text-slate-400 font-roboto text-sm'>Gamebacon Studios 2022</span>
                 </div>
             </IonList>
